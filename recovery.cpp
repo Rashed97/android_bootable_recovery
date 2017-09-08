@@ -1758,6 +1758,8 @@ int main(int argc, char **argv) {
     // Save logs and clean up before rebooting or shutting down.
     finish_recovery();
 
+    ui->Stop();
+
     switch (after) {
         case Device::SHUTDOWN:
             ui->Print("Shutting down...\n");
